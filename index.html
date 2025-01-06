@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>AI-Enhanced Photo Editor</title>
+</head>
+<body>
+  <h1>AI-Enhanced Photo Editor</h1>
+  <input type="file" id="fileInput" />
+  <canvas id="imageCanvas"></canvas>
+  
+  <div class="controls">
+    <button id="removeBgBtn">Remove Background</button>
+    <button id="applyGrayscale">Grayscale</button>
+    <button id="applySepia">Sepia</button>
+    <button id="cropImage">Crop</button>
+    <button id="saveImage">Save Image</button>
+  </div>
+  
+  <div class="button-container">
+    <label for="brightness">Brightness:</label>
+    <input type="range" id="brightness" min="0" max="200" value="100">
+    <label for="contrast">Contrast:</label>
+    <input type="range" id="contrast" min="0" max="200" value="100">
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
+
